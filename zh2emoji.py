@@ -51,8 +51,8 @@ def image2print(img, char, width=40):
     height = int(width * 1.0 / old_width * old_height)
     img = img.resize((width, height), Image.NEAREST)
 
-    for h in xrange(height):
-        for w in xrange(width):
+    for h in range(height):
+        for w in range(width):
             txt += select_ascii_char(*img.getpixel((w, h))[:3])
         txt += '\n'
     return txt
