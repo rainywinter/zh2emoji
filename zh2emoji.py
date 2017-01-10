@@ -38,7 +38,7 @@ def image2print(img, char, width=40):
     @params width: 由于像素点转为打印字符占用屏幕宽度挺大的, 所以需要对图片进行相应缩小.
     @return string
     '''
-    ascii_char = [char, u'  ']
+    ascii_char = [char, '  ']
 
     def select_ascii_char(r, g, b):
         ''' 在灰度图像中,灰度值最高为255,代表白色,最低为0,代表黑色 '''
